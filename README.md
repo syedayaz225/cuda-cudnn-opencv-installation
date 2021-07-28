@@ -1,37 +1,43 @@
 # cuda-cudnn-opencv-installation
 
-Installation sequence 
-1-cuda
-2 cudnn
-3-opencv
+Installation sequence   
+1-cuda  
+2 cudnn  
+3-opencv  
 
-#####################################################
-#1#Installation CUDA
-#####################################################
-i-base image
-ii-runtime
-iii-devel
+#####################################################  
+#1#Installation CUDA  
+#####################################################  
+i-base image  
+ii-runtime  
+iii-devel  
 
-#If using any enviromental variable 
-cd
-conda deactivate
+#If using any enviromental variable   
+
+```
+$ cd
+$ conda deactivate
+```
 
 
-#*************i) Base image *************
 
-apt-get update && apt-get install -y --no-install-recommends \
+
+
+#*************i) Base image *************  
+```
+$  apt-get update && apt-get install -y --no-install-recommends \
     gnupg2 curl ca-certificates && \
     curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - && \
     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" > /etc/apt/sources.list.d/cuda.list && \
     echo "deb https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu2004/x86_64 /" > /etc/apt/sources.list.d/nvidia-ml.list && \
     apt-get purge --autoremove -y curl \
     && rm -rf /var/lib/apt/lists/*
+  ```
+apt-get update  
+apt-get upgrade  
 
-apt-get update
-apt-get upgrade
 
-
-export CUDA_VERSION=11.2.0
+export CUDA_VERSION=11.2.0  
 
 # For libraries in the cuda-compat-* package: https://docs.nvidia.com/cuda/eula/index.html#attachment-a
 apt-get update && apt-get install -y --no-install-recommends \
