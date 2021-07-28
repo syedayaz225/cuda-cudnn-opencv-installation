@@ -15,8 +15,8 @@ iii-devel
 #If using any enviromental variable   
 
 ```
-$ cd
-$ conda deactivate
+cd
+conda deactivate
 ```
 
 
