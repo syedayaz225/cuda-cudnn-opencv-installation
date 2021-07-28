@@ -151,7 +151,7 @@ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.1.
 
 I downloaded and extracted into my laptop just run the command to copy from my laptop to server machine  
 
-scp -P 10607 -r /home/abc/PycharmProjects/DroneNet/dependencies\ cudnn\ for\ uni_server/cudnn-11.2-linux-x64-v8.1.1.33/  root@joffrey.dimis.fim.uni-passau.de:/root/cudnn-11.2-linux-x64-v8/  
+scp -P <port> -r </home/../cudnn-11.2-linux-x64-v8.1.1.33/>  <user>@<address>:<from location:/root/cudnn-11.2-linux-x64-v8/>  
 
 2############Another method but not much helpful  
 ```
