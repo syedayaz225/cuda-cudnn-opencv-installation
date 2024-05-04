@@ -6,13 +6,13 @@ Installation sequence
 3-opencv  
 
 #####################################################  
-#1#Installation CUDA  
+#1# Installation CUDA  
 #####################################################  
 i-base image  
 ii-runtime  
 iii-devel  
 
-#If using any enviromental variable   
+# If using any enviromental variable   
 
 ```
 conda deactivate
@@ -22,7 +22,7 @@ conda deactivate
 
 
 
-#*************i) Base image *************  
+# *************i) Base image *************  
 ```
  apt-get update && apt-get install -y --no-install-recommends \
     gnupg2 curl ca-certificates && \
